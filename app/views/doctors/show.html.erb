@@ -1,3 +1,5 @@
+
+
 <h2><%= @doctor.name %></h2>
 <p>
   Department: <%= @doctor.department %>
@@ -7,4 +9,4 @@ Appointments:
     <%= appt.appointment_datetime.strftime("%B %d, %Y at %H:%M") %>
     <%= link_to appt.patient.name, patient_path(appt.patient_id) %>
 
-  <% end %> 
+  <% end %>
