@@ -11,7 +11,8 @@ Appointments :
     <li><%= link_to appointment.doctor.name, doctor_path(appointment.doctor.id) %>
     <%= appointment.appointment_datetime.strftime("%B") %>
     <%= appointment.appointment_datetime.day %>,
-    <%= appointment.appointment_datetime.year %> at <%= appointment.appointment_datetime.strftime("%H:%M") %>.</li>
+    <%= appointment.appointment_datetime.year %> 
+      at <%= appointment.appointment_datetime.strftime("%H:%M") %>.</li>
   <% end %>
 
 </ul>
