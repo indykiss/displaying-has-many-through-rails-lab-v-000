@@ -5,4 +5,4 @@ class DoctorsController < ApplicationController
         binding.pry
     end
 
-end 
+end
