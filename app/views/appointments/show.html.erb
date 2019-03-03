@@ -1,4 +1,5 @@
+<h2><%= @appointment.doctor %></h2>
+    <%= link_to @appointment.doctor.name, doctor_path(@appointment.doctor_id) %>
 
-
-<%= link_to @appointment.patient.name, patient_path(@appointment.id)%>
-<%= link_to @appointment.doctor.name, doctor_path(@appointment.id)%>
+<h2><%= @appointment.patient %></h2>
+    <%= link_to @appointment.patient.name, patient_path(@appointment.patient_id) %>
